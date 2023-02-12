@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@color/blue_background"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="14dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/button_star_fest_screen"
+            android:layout_marginEnd="@dimen/button_end_fest_screen"
+            android:layout_weight="5"
+            android:backgroundTint="@color/white"
+            android:text="@string/search"
+            android:textAllCaps="false"
+            android:textColor="@color/black_button_font"
+            android:textSize="@dimen/button_text_size_fest_screen"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/search"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/button_interval_fest_screen"
+            app:iconTint="@color/black_button_font" />
+
+        <Button
+            android:id="@+id/media_library"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/button_star_fest_screen"
+            android:layout_marginEnd="@dimen/button_end_fest_screen"
+            android:layout_weight="5"
+            android:backgroundTint="@color/white"
+            android:text="@string/media_library"
+            android:textAllCaps="false"
+            android:textColor="@color/black_button_font"
+            android:textSize="@dimen/button_text_size_fest_screen"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/media_library"
+            app:iconGravity="textStart"
+            app:iconTint="@color/black_button_font"
+            app:iconPadding="@dimen/button_interval_fest_screen"/>
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/button_star_fest_screen"
+            android:layout_marginEnd="@dimen/button_end_fest_screen"
+            android:layout_weight="5"
+            android:backgroundTint="@color/white"
+            android:text="@string/settings"
+            android:textAllCaps="false"
+            android:textColor="@color/black_button_font"
+            android:textSize="@dimen/button_text_size_fest_screen"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/settings"
+            app:iconGravity="textStart"
+            app:iconTint="@color/black_button_font"
+            app:iconPadding="@dimen/button_interval_fest_screen"/>
+
+    </LinearLayout>
+</LinearLayout>
