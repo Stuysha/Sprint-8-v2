@@ -33,54 +33,37 @@
             android:id="@+id/search"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/button_star_fest_screen"
-            android:layout_marginEnd="@dimen/button_end_fest_screen"
-            android:layout_weight="5"
-            android:backgroundTint="@color/white"
             android:text="@string/search"
-            android:textAllCaps="false"
-            android:textColor="@color/black_button_font"
-            android:textSize="@dimen/button_text_size_fest_screen"
             app:cornerRadius="16dp"
             app:icon="@drawable/search"
             app:iconGravity="textStart"
             app:iconPadding="@dimen/button_interval_fest_screen"
-            app:iconTint="@color/black_button_font" />
+            app:iconTint="@color/black_button_font"
+            style = "@style/ButtonStyle"
+            />
 
         <Button
             android:id="@+id/media_library"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/button_star_fest_screen"
-            android:layout_marginEnd="@dimen/button_end_fest_screen"
-            android:layout_weight="5"
-            android:backgroundTint="@color/white"
             android:text="@string/media_library"
-            android:textAllCaps="false"
-            android:textColor="@color/black_button_font"
-            android:textSize="@dimen/button_text_size_fest_screen"
             app:cornerRadius="16dp"
             app:icon="@drawable/media_library"
             app:iconGravity="textStart"
             app:iconTint="@color/black_button_font"
-            app:iconPadding="@dimen/button_interval_fest_screen"/>
+            app:iconPadding="@dimen/button_interval_fest_screen"
+            style = "@style/ButtonStyle"/>
         <Button
             android:id="@+id/setting"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/button_star_fest_screen"
-            android:layout_marginEnd="@dimen/button_end_fest_screen"
-            android:layout_weight="5"
-            android:backgroundTint="@color/white"
             android:text="@string/settings"
-            android:textAllCaps="false"
-            android:textColor="@color/black_button_font"
-            android:textSize="@dimen/button_text_size_fest_screen"
             app:cornerRadius="16dp"
             app:icon="@drawable/settings"
             app:iconGravity="textStart"
             app:iconTint="@color/black_button_font"
-            app:iconPadding="@dimen/button_interval_fest_screen"/>
+            app:iconPadding="@dimen/button_interval_fest_screen"
+            style = "@style/ButtonStyle"/>
 
     </LinearLayout>
 </LinearLayout>

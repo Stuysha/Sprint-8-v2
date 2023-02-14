@@ -26,14 +26,9 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/string_star_2_screen"
-            android:layout_marginTop="@dimen/button_interval21"
-            android:layout_marginEnd="@dimen/string_end_2_screen"
-            android:layout_marginBottom="@dimen/button_interval21"
             android:text="@string/dark_theme"
-            android:textAllCaps="false"
-            android:textColor="@color/black_2"
-            android:textSize="@dimen/string_text_size_2_screen" />
+            style= "@style/TextViewSettingScreen"
+            />
 
         <Switch
             android:id="@+id/switch1"
@@ -61,14 +56,8 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/string_star_2_screen"
-            android:layout_marginTop="@dimen/button_interval21"
-            android:layout_marginEnd="@dimen/string_end_2_screen"
-            android:layout_marginBottom="@dimen/button_interval21"
             android:text="@string/share_app"
-            android:textAllCaps="false"
-            android:textColor="@color/black_2"
-            android:textSize="@dimen/string_text_size_2_screen" />
+            style = "@style/TextViewSettingScreen"/>
 
     </FrameLayout>
 
@@ -112,14 +101,8 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/string_star_2_screen"
-            android:layout_marginTop="@dimen/button_interval21"
-            android:layout_marginEnd="@dimen/string_end_2_screen"
-            android:layout_marginBottom="@dimen/button_interval21"
             android:text="@string/write_support"
-            android:textAllCaps="false"
-            android:textColor="@color/black_2"
-            android:textSize="@dimen/string_text_size_2_screen" />
+            style = "@style/TextViewSettingScreen" />
 
     </FrameLayout>
 
@@ -140,14 +123,8 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/string_star_2_screen"
-            android:layout_marginTop="@dimen/button_interval21"
-            android:layout_marginEnd="@dimen/string_end_2_screen"
-            android:layout_marginBottom="@dimen/button_interval21"
             android:text="@string/uUser_agreement"
-            android:textAllCaps="false"
-            android:textColor="@color/black_2"
-            android:textSize="@dimen/string_text_size_2_screen" />
+            style = "@style/TextViewSettingScreen"/>
 
 
     </FrameLayout>
