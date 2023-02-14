@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_2"
+    android:background="?attr/colorSecondary"
     android:orientation="vertical"
     android:padding="@dimen/button_interval_fest_screen">
 
@@ -11,6 +11,9 @@
         android:id="@+id/arrow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/whiteToolbar"
+        android:foregroundTint="@color/whiteToolbar"
+        android:textColor="?attr/colorPrimaryVariant"
         app:navigationIcon="@drawable/arrow"
         app:title="@string/settings">
 
@@ -50,7 +53,8 @@
             android:layout_gravity="end"
             android:layout_marginTop="@dimen/button_interval21"
             android:layout_marginEnd="@dimen/button_interval21"
-            android:src="@drawable/share_app" />
+            android:src="@drawable/share_app"
+            app:tint="?attr/colorOnPrimary" />
 
         <TextView
 
@@ -79,7 +83,8 @@
             android:layout_gravity="end"
             android:layout_marginTop="22dp"
             android:layout_marginEnd="@dimen/button_interval21"
-            android:src="@drawable/write_support2" />
+            android:src="@drawable/write_support2"
+            app:tint="?attr/colorOnPrimary"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -87,7 +92,8 @@
             android:layout_gravity="end"
             android:layout_marginTop="@dimen/button_interval31"
             android:layout_marginEnd="27dp"
-            android:src="@drawable/write_support3" />
+            android:src="@drawable/write_support3"
+            app:tint="?attr/colorOnPrimary"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -95,7 +101,8 @@
             android:layout_gravity="end"
             android:layout_marginTop="@dimen/button_interval31"
             android:layout_marginEnd="33dp"
-            android:src="@drawable/write_support3" />
+            android:src="@drawable/write_support3"
+            app:tint="?attr/colorOnPrimary"/>
 
         <TextView
 
@@ -116,7 +123,8 @@
             android:layout_gravity="end"
             android:layout_marginTop="23dp"
             android:layout_marginEnd="24dp"
-            android:src="@drawable/uuser_agreement" />
+            android:src="@drawable/uuser_agreement"
+            app:tint="?attr/colorOnPrimary"/>
 
 
         <TextView
