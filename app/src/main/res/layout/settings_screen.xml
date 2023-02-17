@@ -46,6 +46,7 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/share_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -60,10 +61,10 @@
 
         <TextView
 
+            style="@style/TextViewSettingScreen"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/share_app"
-            style = "@style/TextViewSettingScreen"/>
+            android:text="@string/share_app" />
 
     </FrameLayout>
 
