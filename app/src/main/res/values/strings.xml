@@ -9,5 +9,8 @@
     <string name="write_support">Написать в поддержку</string>
     <string name="uUser_agreement">Пользовательское соглашение</string>
     <string name="share_app_step2">https://practicum.yandex.ru/profile/android-developer</string>
+    <string name="text_message">Спасибо разработчикам и разработчицам за крутое приложение!</string>
+    <string name="topic_message">Сообщение разработчикам и разработчицам приложения Playlist Maker</string>
+    <string name="e_mail">riabikina5@gmail.com</string>
 
 </resources>
