@@ -10,17 +10,19 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
 
 class SerchActivity : AppCompatActivity() {
+    var inputEditText: TextInputEditText? = null
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_serch)
 
         val closeSearch = findViewById<TextInputEditText>(R.id.search)
-        val inputEditText = findViewById<TextInputEditText>(R.id.search)
+        inputEditText = findViewById<TextInputEditText>(R.id.search)
         val clearButton = findViewById<ImageView>(R.id.close)
 
         clearButton.setOnClickListener {
-            inputEditText.setText("")
+            inputEditText?.setText("")
         }
         clearButton.visibility = View.GONE
         val simpleTextWatcher = object : TextWatcher {
@@ -29,7 +31,7 @@ class SerchActivity : AppCompatActivity() {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if (s.isNullOrEmpty()){
+                if (s.isNullOrEmpty()) {
                     clearButton.visibility = View.GONE
                 } else {
                     clearButton.visibility = View.VISIBLE
@@ -41,6 +43,18 @@ class SerchActivity : AppCompatActivity() {
             }
         }
 
-        inputEditText.addTextChangedListener(simpleTextWatcher)
+        inputEditText?.addTextChangedListener(simpleTextWatcher)
+
+    }
+
+    val serchText = "serchText"
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(serchText, inputEditText?.text?.toString() ?: "")
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        inputEditText!!.setText(savedInstanceState.getString(serchText))
     }
 }
