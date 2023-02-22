@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/button_interval_fest_screen"
-    tools:context=".SerchActivity">
+    tools:context=".SearchActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/whiteToolbar"

@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val buttonSearch = findViewById<Button>(R.id.search)
         val imageClickListener: View.OnClickListener = View.OnClickListener {
-            val intent = Intent(this@MainActivity, SerchActivity::class.java)
+            val intent = Intent(this@MainActivity, SearchActivity::class.java)
             startActivity(intent)
         }
         buttonSearch.setOnClickListener(imageClickListener)

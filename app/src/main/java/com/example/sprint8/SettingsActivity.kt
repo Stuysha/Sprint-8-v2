@@ -12,8 +12,8 @@ class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings_screen)
-        val buttonArrow = findViewById<Toolbar>(R.id.arrow)
-        buttonArrow.setOnClickListener {
+        val toolbar = findViewById<Toolbar>(R.id.arrow)
+        toolbar.setOnClickListener {
             onBackPressed()
         }
         val buttonShareApp = findViewById<FrameLayout>(R.id.share_app)
